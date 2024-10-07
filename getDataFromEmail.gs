@@ -1,7 +1,7 @@
 function getEmailToSpreadsheet() {
 
   var threads = GmailApp.search('from:noreply@rvo.nl'); //Put your specific search criteria
-  var ss = SpreadsheetApp.openById("1dAjBgmm1H-H2fn7Ebx-2GkxQ1PxP7_wUYQLrjQo2IcA"); //Put a specific name for a new spreadsheet or use openById
+  var ss = SpreadsheetApp.openById("1dAjBgmm1H-H2fn7Ebx-UYQLrjQo2IcA"); //Put a specific name for a new spreadsheet or use openById
   var sheet = ss.getSheets()[0];
 
   for (var i = 0; i < threads.length; i++) {
